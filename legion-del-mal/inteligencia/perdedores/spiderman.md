@@ -16,7 +16,6 @@ Spiderman es un superhéroe ficticio creado por el escritor Stan Lee y el dibuja
 
 ## Películas
 
-- Spiderman: No way home
 - Spiderman: Far from home
 - Spiderman: Into the spider-verse
 - Spiderman: Homecoming
