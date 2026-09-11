@@ -16,7 +16,6 @@ Spiderman es un superhéroe ficticio creado por el escritor Stan Lee y el dibuja
 
 ## Películas
 
-- Spiderman: No way home
 - Spiderman: Far from home
 - Spiderman: Into the spider-verse
 - Spiderman: Homecoming
@@ -24,7 +23,3 @@ Spiderman es un superhéroe ficticio creado por el escritor Stan Lee y el dibuja
 - Spiderman 1
 - Spiderman 2
 - Spiderman 3
-
-## Estrategia recomendada
-
-Se recomienda centrarse en mejorar la agilidad y la fuerza del personaje, así como en desarrollar habilidades de combate cuerpo a cuerpo. Además, es importante mantener un equilibrio entre la vida personal de Peter Parker y sus responsabilidades como Spiderman para evitar conflictos que puedan afectar su desempeño como héroe.
