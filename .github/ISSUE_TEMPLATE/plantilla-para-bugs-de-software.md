@@ -2,7 +2,7 @@
 name: Plantilla para bugs de software
 about: Mejora y mantenimento del código
 title: 'Bug: '
-labels: bug, enhancement
+labels: bug, enhancement, mejora de software
 assignees: luisperezzz
 
 ---
