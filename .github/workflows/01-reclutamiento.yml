@@ -3,9 +3,20 @@ name: Reclutamiento de agente
 on: push
 
 jobs:
-    reporte-de-reclutamiento: 
-        runs-on: ubuntu-latest
+  reporte-de-reclutamiento:
+    runs-on: ubuntu-latest
 
-        steps: 
-            - name: El agente se presenta
-              run: echo "Soy el mas capo"
+    steps:
+      - name: El agente se presenta
+        run: echo "Soy el mas capo"
+
+      - name: Reporte de identidad
+        run: |
+          echo "Reporte de identidad"
+          echo "===================="
+          echo ""
+          echo "Nombre clave: ${{github.actor}}"
+          echo "===================="
+          echo "Contexto de Github clave"
+          echo "Repo: ${{github.repository}}"
+          echo "Metadata: ${{toJson(github)}}"
