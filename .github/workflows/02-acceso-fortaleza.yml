@@ -1,6 +1,7 @@
 name: Acceso a data protegida
 
-on: push
+on: 
+    workflow_dispatch:
 
 jobs:
   acceso-a-la-base-eclutamiento:
