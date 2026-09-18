@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
       - name: El agente llega a la fortaleza
         run: |
           echo "Agente ${{github.actor}}"
@@ -15,17 +18,17 @@ jobs:
           ls -la
           echo ""
           echo ""
-          echo "❌ pero qué pasó? no hay nada"
+          echo "✅ ¡Ahora sí hay archivos!"
 
       - name: 'Ahora si, vamos a ver planes'
         run: |
-            echo "Buscar los archivos de la legión"
-            ls -la
-            echo "✅ Funciona"
-            echo ""
-            echo "Planes:"
-            ls planes/
-            echo "Villanos:"
-            ls miembros/
-            echo "Inteligencia"
-            ls inteligencia/
+          echo "Buscar los archivos de la legión"
+          ls -la
+          echo "✅ Funciona"
+          echo ""
+          echo "Planes:"
+          ls planes/
+          echo "Villanos:"
+          ls miembros/
+          echo "Inteligencia"
+          ls inteligencia/
