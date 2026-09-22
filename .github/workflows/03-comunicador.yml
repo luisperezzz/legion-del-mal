@@ -5,32 +5,36 @@ name: Comunicador de la legion
 on:
   workflow_dispatch:
     inputs:
-      villano: 
+      villano:
         description: "Qué villano envia el mensaje?"
         required: true
         type: choice
         options:
           - Lex Luthor
-          - Magneto 
+          - Magneto
           - Spiderman
-      mensaje: 
-            description: 'Mensaje para el consejo'
-            required: true
-            default: 'La misión fue un éxito'
+      mensaje:
+        description: "Mensaje para el consejo"
+        required: true
+        default: "La misión fue un éxito"
       prioridad:
-        description: 'Nivel de prioridad'
+        description: "Nivel de prioridad"
         required: true
         type: choice
         options:
           - Alta 🔴
           - Media 🟡
-          - Baja 
-          
+          - Baja
 
 jobs:
   transmitir-mensaje:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
+      - name: Imprimir inputs
+        run: |
+          echo "Inputs: "
+          echo ""
+          echo "Villano: ${{inputs.villano}}"
+          echo "Villano: ${{inputs.prioridad}}"
+          echo "Villano: ${{inputs.mensaje}}"
