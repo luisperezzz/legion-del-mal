@@ -28,13 +28,24 @@ on:
 
 jobs:
   transmitir-mensaje:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest      
 
     steps:
+      - name: Instalar el paquete de la legion
+        run: sudo apt-get install -y cowsay
+
+
       - name: Imprimir inputs
         run: |
-          echo "Inputs: "
+          echo "==========================="
+          echo "         Inputs: "
+          echo "==========================="
           echo ""
-          echo "Villano: ${{inputs.villano}}"
-          echo "Prioridad: ${{inputs.prioridad}}"
-          echo "Mensaje: ${{inputs.mensaje}}"
+          echo "De: ${{inputs.villano}}"
+          echo ""
+          echo "Fecha: $(date -u + "%d/%m/%Y - %H:%M UTC")"
+          echo "-------- Mensaje ---------"
+          cowsay -f eyes "${{inputs.mensaje}}"
+          echo ""
+          echo "--- ${{inputs.villano}}"
+          echo "..."
