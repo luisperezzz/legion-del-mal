@@ -12,7 +12,20 @@ on:
         options:
           - Lex Luthor
           - Magneto 
-          - Spiderman          
+          - Spiderman
+      mensaje: 
+            description: 'Mensaje para el consejo'
+            required: true
+            default: 'La misión fue un éxito'
+      prioridad:
+        description: 'Nivel de prioridad'
+        required: true
+        type: choice
+        options:
+          - Alta 🔴
+          - Media 🟡
+          - Baja 
+          
 
 jobs:
   transmitir-mensaje:
