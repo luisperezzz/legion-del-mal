@@ -36,5 +36,5 @@ jobs:
           echo "Inputs: "
           echo ""
           echo "Villano: ${{inputs.villano}}"
-          echo "Villano: ${{inputs.prioridad}}"
-          echo "Villano: ${{inputs.mensaje}}"
+          echo "Prioridad: ${{inputs.prioridad}}"
+          echo "Mensaje: ${{inputs.mensaje}}"
