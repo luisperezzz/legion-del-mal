@@ -1,0 +1,30 @@
+name: 🔍 Escaneo de seguridad de Brainiac
+on: push
+jobs:
+  escaneo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Brainiac accede a la base
+        uses: actions/checkout@v4
+
+      - name: Escanear planes de la Legión
+        run: |
+          echo "🔍 Escaneando planes..."
+          ls planes/
+          echo "✅ Planes verificados."
+      - name: Escanear fichas de villanos
+        run: |
+          echo "🔍 Escaneando fichas de villanos..."
+          ls vilanos/
+          echo "✅ Fichas verificadas."
+      - name: Escanear inteligencia sobre héroes
+        run: |
+          echo "🔍 Escaneando expedientes de héroes..."
+          ls inteligencia/
+          echo "✅ Expedientes verificados."
+      - name: Reporte final
+        run: |
+          echo "📊 REPORTE DE SEGURIDAD"
+          echo "======================"
+          echo "Todos los sistemas verificados."
+          echo "Brainiac: 'La base está segura. Por ahora.'"
